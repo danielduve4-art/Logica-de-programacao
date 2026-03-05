@@ -116,7 +116,10 @@ console.log("_______________________________");
 
 const nomes = ["Ana", "Bruno", "Carolina", "Daniel", "Eduardo"];
 // → Seu código aqui:
-
+// a)
+console.log(nomes.indexOf("Daniel"))
+// b)
+console.log(nomes.indexOf("Lucas"))
 console.log("_______________________________");
 
 
@@ -130,6 +133,12 @@ console.log("_______________________________");
 const letras1 = ["a", "b", "c", "d", "e"];
 const letras2 = ["f", "g"];
 // → Seu código aqui:
+// a)
+const letrasJuntas = letras1.concat(letras2)
+console.log(letrasJuntas)
+// b)
+const selecaoDeLetras = letrasJuntas.slice(1, 4)
+console.log(selecaoDeLetras)
 
 
 console.log("_______________________________");
@@ -142,6 +151,21 @@ console.log("_______________________________");
 // b) Use flat para achatar o array em um unico nível (os arrays internos se tornam elementos individuais) e exiba-o.
 
 // → Seu código aqui:
+// a)
+const frutas = [
+    ["Maçã", "Banana", "Uva"],
+    ["Laranja", "Abacaxi", "Manga"],
+    ["Morango", "Kiwi","Pera"]
+]
+console.log(frutas)
+
+console.log(frutas[0])
+console.log(frutas[1][2])
+console.log(frutas[2][0])
+
+// b)
+const frutasAlinhadas = frutas.flat()
+console.log(frutasAlinhadas)
 
 
 console.log("_______________________________");
